@@ -8,20 +8,20 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.myapplication.RegisterActivity">
+    tools:context=".RegisterActivity">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:ems="10"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/idText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/idText"
+        android:id="@+id/passwordText"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="아이디" />
+        android:hint="비밀번호" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -42,61 +42,50 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_below="@+id/nameText"
-        android:layout_alignRight="@+id/nameText"
-        android:layout_alignEnd="@+id/nameText"
-        android:id="@+id/nicknameText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="닉네임" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/nicknameText"
-        android:layout_alignRight="@+id/nicknameText"
-        android:layout_alignEnd="@+id/nicknameText"
-        android:id="@+id/phonenumberText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="전화번호" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/phonenumberText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/emailText"
+        android:id="@+id/maliText"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="e-mail" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/passwordText"
-        android:layout_below="@+id/idText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="비밀번호"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:hint="이메일" />
 
     <Button
         android:text="회원가입"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/emailText"
+        android:layout_below="@+id/maliText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/button2"
+        android:id="@+id/registerbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/idText"
+        android:hint="아이디"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/validateButton" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:background="@color/colorWarning"
+        android:text="중복 체크"
+        android:id="@+id/validateButton"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/idText"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
+
