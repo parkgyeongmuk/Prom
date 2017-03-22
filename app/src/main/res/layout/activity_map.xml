@@ -7,8 +7,7 @@
     <Button
         android:layout_width="82dp"
         android:layout_height="51dp"
-        android:id="@+id/homebutton"
-        android:background="@drawable/home" />
+        android:id="@+id/homebutton" />
 
     <TextView
         android:layout_width="match_parent"
